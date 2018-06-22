@@ -10,13 +10,13 @@ document.onkeyup = function(event) {
     guessesSoFar.push(userGuess); 
     if (userGuess == computerGuess) {
         wins++;
-        alert('Way to go! You guessed correctly! You Won!');
+        alert("You guessed correctly! You Won!");
         guessesLeft = 9; 
         guessesSoFar.length = 0;
     }
     else if (guessesLeft == 0){
         losses++;
-        alert('You didnt guess the correct letter. You lost. Lets try again.');
+        alert("You didnt guess the correct letter. You lost. Lets try again.");
         guessesLeft = 9;
         guessesSoFar.length = 0;
     }
@@ -40,5 +40,5 @@ document.onkeyup = function(event) {
             guessesSoFar 
             "</p>"
     ;
-    document.querySelector('#game').innerHTML = html;
+    document.querySelector("#game").innerHTML = html;
         }
